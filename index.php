@@ -30,7 +30,7 @@
             $password = $_POST['password'];
             
             // Credenciales definidas
-            $valid_user = "estudiante";
+            $valid_user = "mayy";
             $valid_pass = "1234";
             
             if ($username === $valid_user && $password === $valid_pass) {
