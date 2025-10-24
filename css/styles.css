@@ -80,3 +80,287 @@ button:hover {
     margin-bottom: 20px;
     font-size: 24px;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Login Styles */
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.math-img {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Panel Styles */
+header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    color: #333;
+}
+
+.logout {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+
+.exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exercise-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.exercise-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.exercise-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #764ba2;
+}
+
+/* Exercise Pages */
+.exercise-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.calculation-form, .coordinate-form {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.calculation-form h3, .coordinate-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.input-group label {
+    min-width: 120px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+}
+
+.result h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Coordinate Plane */
+.visual-result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.coordinate-plane {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    position: relative;
+    margin: 20px auto;
+    background: #f8f9fa;
+}
+
+.point {
+    width: 12px;
+    height: 12px;
+    background: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.point-label {
+    position: absolute;
+    background: white;
+    padding: 2px 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 11;
+}
+
+.axes {
+    position: absolute;
+    background: #333;
+}
+
+.x-axis {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
+
+.y-axis {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+}
+
+.quadrant-label {
+    position: absolute;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Quadrant Colors */
+.quadrant-i { color: #27ae60; font-weight: bold; }
+.quadrant-ii { color: #e67e22; font-weight: bold; }
+.quadrant-iii { color: #e74c3c; font-weight: bold; }
+.quadrant-iv { color: #9b59b6; font-weight: bold; }
+.special-point { color: #3498db; font-weight: bold; }
